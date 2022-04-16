@@ -1,5 +1,11 @@
+
 body {
 	margin: 0;
+}
+/*Menu*/
+
+.logo{
+	padding: 10px;
 }
 
 ul{
@@ -9,13 +15,19 @@ ul{
 }
 
 nav {
-	background: #0a0a0a;
+	background: #ffffff;
 	padding: 0 20px;
 	justify-content: space-between;
+	box-shadow: 0px 0px 1em black;
+	
 }
 
 h1, p, a{
-	color: #fff;
+	color: #58880e;
+	
+}
+h1{
+	font-size: 30px;
 }
 
 nav, ul{
@@ -27,16 +39,16 @@ li{
 	padding: 0 20px;
 }
 
-li:hover, button:hover{
+li:hover, h1:hover, button:hover{
 	cursor: pointer;
 	opacity: 0.8;
-	background-color: rgb(255, 255, 255, 0.2);
+	background-color: rgba(92, 194, 97, 0.2);
 }
 
 button{
 	background: transparent;
 	border: none;
-	color: #fff;
+	color: #58880e;
 	font-size: 36px;
 	
 	position: absolute;
@@ -65,12 +77,21 @@ button:focus ~ ul{
 
 	button{
 		display: flex;
+		margin-top: 10px;
 	}
 
 	li, ul{
 		width: 100%;
 	}
-
-	
-
+}
+/*Banner*/
+#banner{
+	position: absolute;
+	margin-top: 0;
+	width: 100%;
+	height: 500px;
+	background-image: url(img/banner2.jfif);
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: 100% 100%;
 }
